@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'form.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>Employee Record System</h1>
+</div>
+<form method="POST" action="add">
+<div class="form-content">
+    {% csrf_token%}
+    <label>ID:</label>
+    <div class="field">{{form.eid}}</div>
+    <label>Name:</label>
+    <div class="field">{{form.ename}}</div>
+    <label>EmailId:</label>
+    <div class="field">{{form.emailid}}</div>
+    <label>Contact#:</label>
+    <div class="field">{{form.econtact}}</div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</div>
+</form>
+</body>
+</html>

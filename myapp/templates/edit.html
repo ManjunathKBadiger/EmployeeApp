@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'edit.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>Employee Record System</h1>
+</div>
+<div class="fields">
+    <form method="POST" action="/update/{{ emp.id }}">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td><input name="eid" required value="{{ emp.eid }}"></td>
+            </tr>
+            <tr>
+                <td><input name="ename" required value="{{ emp.ename }}"></td>
+            </tr>
+            <tr>
+                <td><input name="emailid" required value="{{ emp.emailid }}"></td>
+            </tr>
+            <tr>
+                <td><input name="econtact" required value="{{ emp.econtact }}"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Update</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

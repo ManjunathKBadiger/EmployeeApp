@@ -1,0 +1,42 @@
+.header{
+    background-color: black;
+    padding: 20px;
+    color: wheat;
+    text-align: center;
+}
+
+.fields
+{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(158, 173, 201);
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    padding: 12px;
+    background-color: rgb(8, 8, 14);
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

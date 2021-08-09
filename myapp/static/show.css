@@ -1,0 +1,48 @@
+.header{
+    background-color: black;
+    padding: 20px;
+    color: wheat;
+    text-align: center;
+}
+
+.search
+{
+    background-color: rgb(76, 69, 69);
+    padding: 20px;
+}
+.search input{
+    width: 200px;
+    padding: 5px;
+}
+
+.search button{
+    padding: 5px;
+    width: 100px;
+    font-weight: bold;
+}
+.search button:hover{
+    cursor: pointer;
+    background-color: rgb(223, 180, 165);
+    font-weight: bold;
+}
+
+table{
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(158, 173, 201);
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+table td{
+    padding: 10px;
+}
+.search a{
+    color: white;
+    padding: 5px;
+    font-size: 20px
+}
